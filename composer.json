@@ -21,7 +21,7 @@
     "ext-curl": "*",
     "ext-mbstring": "*",
     "ext-shmop": "*",
-    "demorfi/digua": "1.2.*"
+    "demorfi/digua": "1.3.*"
   },
   "autoload": {
     "files": ["vendor/demorfi/digua/bootstrap.php"],

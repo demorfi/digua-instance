@@ -8,8 +8,6 @@ $builder         = null;
 $appEntryPath    = null;
 $errorController = null;
 
-Digua\Env::dev();
-
 if (str_starts_with($_SERVER['REQUEST_URI'], '/api/')) {
     $_SERVER['HTTP_X_REQUESTED_WITH'] = 'XMLHttpRequest';
 

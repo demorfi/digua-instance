@@ -44,7 +44,7 @@ class Page1 extends BaseController
     public function defaultAction(): Template
     {
         $title      = 'Page 1 [debug is ' . ($this->config->get('debug') ? 'active' : 'inactive') . ']';
-        $pagination = new PaginationOfArray;
+        $pagination = new PaginationOfArray((int)$this->dataRequest()->query()->get('page', 1));
         return $this->render('page1', compact('title', 'pagination'));
     }
 
